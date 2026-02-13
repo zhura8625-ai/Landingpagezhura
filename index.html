@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas Hidratantes Premium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background: url("https://img.freepik.com/foto-gratis/vasos-bebidas-refrescantes-sobre-bandeja-madera_23-2149143783.jpg") center/cover no-repeat;
+            height: 90vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0.5rem;
+        }
+        header p {
+            font-size: 1.3rem;
+            margin: 0.3rem;
+        }
+        header .btn {
+            background: #00bcd4;
+            padding: 1rem 2rem;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            margin-top: 20px;
+        }
+        .section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .benefits {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .benefit {
+            width: 28%;
+            margin: 1rem 0;
+        }
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product-card {
+            width: 28%;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+        .product-card img {
+            width: 100%;
+        }
+        .product-card h3, .product-card p {
+            margin: 0.5rem;
+        }
+        .contact-form {
+            max-width: 500px;
+            margin: auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .contact-form button {
+            background: #00bcd4;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 50px;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        @media (max-width: 768px) {
+            .benefit, .product-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header>
+        <h1>¡Hidrátate Mejor, Vive Mejor!</h1>
+        <p>Descubre nuestras bebidas hidratantes naturales y refrescantes</p>
+        <a href="#productos" class="btn">Ver Productos</a>
+    </header>
+
+    <!-- Beneficios -->
+    <section class="section" id="beneficios">
+        <h2>¿Por qué elegir nuestras bebidas?</h2>
+        <div class="benefits">
+            <div class="benefit">
+                <h3>Alta Hidratación</h3>
+                <p>Nuestras bebidas contienen electrolitos esenciales para recuperar energía.</p>
+            </div>
+            <div class="benefit">
+                <h3>Sabor Natural</h3>
+                <p>Preparadas con frutas naturales y sin químicos añadidos.</p>
+            </div>
+            <div class="benefit">
+                <h3>Salud & Energía</h3>
+                <p>Perfectas para tu día, tu entrenamiento o tu descanso.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section class="section" id="productos">
+        <h2>Productos Destacados</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="https://img.freepik.com/fotos-premium/smoothies-frutas-frescas_23-2149316509.jpg" alt="bebida fruta tropical">
+                <h3>Bebida Fruta Tropical</h3>
+                <p>Refrescante, con electrolitos y antioxidantes.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://img.freepik.com/fotos-gratis/bebida-naranja_23-2147916656.jpg" alt="limonada refrescante">
+                <h3>Limonada Refrescante</h3>
+                <p>Perfecta para el calor y tu día activo.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://img.freepik.com/foto-gratis/vasos-agua-fruta-hielo_23-2149143784.jpg" alt="agua con fruta">
+                <h3>Agua infusionada con frutas</h3>
+                <p>Hidratación pura con sabor natural.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="section">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <p>"¡Las bebidas cambiaron mi rutina diaria! Ideal para antes y después de entrenar."</p>
+        <p>"¡Sabor y energía sin igual!"</p>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section" id="contacto">
+        <h2>Contáctanos</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo" required>
+            <textarea rows="4" placeholder="Tu mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Bebidas Hidratantes | Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
